@@ -71,8 +71,8 @@ def trip
   print "Enter speed : "
   speed = gets.chomp.to_f
 
-  result = sys == 'i' && (weight*703)/(height**height) || sys == 'm' && weight/(height**height)
-  output = "Your trip will take #{clean(distance/speed)} hours and costs £#{clean(distance/)}"
+  # result = cost * ((distance-30)/mpg + 
+  output = "Your trip will take #{clean(distance/speed)} hours and costs £#{clean(cost*distance/mpg)}"
 end
 
 mode = ''
